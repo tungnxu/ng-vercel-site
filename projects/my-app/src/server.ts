@@ -9,7 +9,7 @@ import { createServer } from 'node:http';
 
 const engine = new AngularNodeAppEngine();
 
-const handler = createNodeRequestHandler(async (req, res) => {
+export const handler = createNodeRequestHandler(async (req, res) => {
   const result = await engine.handle(req);
   if (result) {
     writeResponseToNodeResponse(result, res);
