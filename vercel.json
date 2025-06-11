@@ -7,7 +7,8 @@
   ],
   "functions": {
     "api/index.js": {
-      "includeFiles": "dist/my-app/**"
+      "includeFiles": "dist/my-app/**",
+      "excludeFiles": "**/*.spec.ts"
     }
   }
 }
